@@ -88,10 +88,14 @@ nav{
     margin: auto;
 }
 
-@media  (max-width:800px) {
-    #right-con img{
+@media  (max-width:900px) {
+
+    #right-con{
         display: flex;
-        flex-direction: column;
+        justify-content: left;
+    }
+
+    #right-con img{
         filter: drop-shadow(0 0 10px black);
         width: 50vw;
         height:50vh;
@@ -179,6 +183,7 @@ nav{
 
 .product h5{
     margin:0;
+    font-size: 1vmax;;
 }
 
 .product:hover{
@@ -203,11 +208,15 @@ footer{
 }
 
 .leftfoot  img{
-    width:8vw;
+    width:10vw;
     display: flex;
     margin:1vmax;
     cursor: pointer;
     
+}
+
+.leftfoot p{
+    font-size: 1.3vmax;;
 }
 
 .midfoot{
@@ -225,7 +234,8 @@ footer{
 .midfoot p{
     margin: auto;
     max-width: 60%;
-     margin-top:1vmax;
+    font-size: 1.5vmax;
+    margin-top: 1vmax;
 }
 
 .rightfoot{
@@ -245,4 +255,7 @@ footer{
     text-decoration: none;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:1.5vmax;
+    font-size: 1.5vmax;
+
 }
