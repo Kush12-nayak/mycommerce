@@ -1,0 +1,248 @@
+body{
+    margin:0;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+nav{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index:10000;
+}
+
+.left{
+    width: 20%;
+}
+
+.left >a{
+    font-size: 2.5vmax;
+    font-weight: bold;
+    color: salmon;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mid{
+    width: 60%;
+    display: flex;
+    align-self: stretch;
+    justify-content: space-evenly;
+}
+
+.mid >a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    font-size: 1.6vmax;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid > a:hover{
+    border-bottom: 2px solid salmon;
+    color: salmon;
+}
+
+.right{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.right > img{
+    width: 2.5vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.home{
+    display: flex;
+    border:1px solid red;
+    height: 90vh;
+    background-image: linear-gradient(to right,rgb(243, 226, 169),rgb(177, 219, 231));
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+#right-con{
+    display: flex;
+    justify-content: left;
+}
+
+#right-con img{
+    filter: drop-shadow(0 0 10px black);
+    width: 30vw;
+    height:70vh;
+    margin: auto;
+}
+
+@media  (max-width:800px) {
+    #right-con img{
+        display: flex;
+        flex-direction: column;
+        filter: drop-shadow(0 0 10px black);
+        width: 50vw;
+        height:50vh;
+    }
+    
+}
+
+#left-con{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vmax;
+    margin-top: -3vmax;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#left-con > h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4vmax;
+}
+
+#left-con > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -5%;
+}
+
+#left-con > h4{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-weight: normal;
+    margin-left: 2%;
+}
+
+#left-con button{
+    width:16vmax;
+    border: none;
+    padding: 1vmax;
+    border-radius: 2vmax;
+    background-color: salmon;
+    color: white;
+    margin-left: 2%;
+
+}
+
+#left-con button:hover{
+    background-color: rgb(130, 130, 219);
+    color:rgb(243, 226, 169) ;
+}
+
+#products h1{
+    text-align: center;
+    margin: 4vmax auto;
+    font-size: 2.5vmax;
+    border-bottom: 5px solid salmon;
+    width: 22vw;
+    padding: 1vmax;
+}
+
+.produts-con{
+    display: flex;
+    height: 100%;
+    max-width:80vw;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product{
+    transition: all 0.5s;
+    height: 25vmax;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+}
+
+.product img{
+    width:20vmax;
+    height: 20vmax;
+}
+
+.product h4{
+    margin:2%
+}
+
+.product h5{
+    margin:0;
+}
+
+.product:hover{
+    transform:translateY(-10px);
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.651);
+    margin-top: 2vmax;
+    display: flex;
+    padding: 2vmax;;
+    color: white;
+    align-items: center;
+}
+
+.leftfoot{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.leftfoot  img{
+    width:8vw;
+    display: flex;
+    margin:1vmax;
+    cursor: pointer;
+    
+}
+
+.midfoot{
+    width: 60%;
+    text-align: center;
+}
+
+
+.midfoot h1{
+    font-size: 4vmax;
+    color: salmon;
+    
+}
+
+.midfoot p{
+    margin: auto;
+    max-width: 60%;
+     margin-top:1vmax;
+}
+
+.rightfoot{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rightfoot h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5vmax;
+}
+
+.rightfoot a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
