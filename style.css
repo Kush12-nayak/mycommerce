@@ -215,6 +215,17 @@ footer{
     
 }
 
+@media all and (max-width: 900px) {
+
+
+    .leftfoot img{
+        width: 20vw;
+        height: 7vw;
+    }
+    
+
+}
+
 .leftfoot p{
     font-size: 1.3vmax;;
 }
